@@ -80,10 +80,40 @@ models/best_model.pkl
 - [evaluation_metrics.txt](artifacts/evaluation_metrics.txt)
 
 📊 **Charts**
-- ![Churn Distribution](charts/churn_distribution.png)
-- ![Categorical Distributions](charts/categorical_distributions.png)
-- ![Correlation Heatmap](charts/correlation_heatmap.png)
-- ![ROC Curve Comparison](charts/roc_curve_comparison.png)
+---
+
+## 📈 CatBoost Model Evaluation Visuals
+
+**1. Confusion Matrix @ Optimized Threshold**  
+Shows model accuracy across true churn and non-churn cases.  
+![Confusion Matrix](charts/confusion_matrix_optimized.jpg)
+
+**2. Reliability Diagram — CatBoost**  
+Evaluates probability calibration (Brier = 0.169).  
+![Reliability Diagram](charts/reliability_diagram_catboost.png)
+
+**3. Score Distribution by Class — CatBoost**  
+Visualizes how predicted probabilities differ for churn vs non-churn.  
+![Score Distribution](charts/score_distribution_catboost.png)
+
+**4. ROC Curve — CatBoost (AUC = 0.84)**  
+Measures discriminative power (higher AUC = better).  
+![ROC Curve](charts/roc_curve_catboost.png)
+
+**5. Precision–Recall Curve — CatBoost (AP = 0.66)**  
+Focuses on churn prediction precision and recall tradeoff.  
+![Precision Recall](charts/precision_recall_catboost.png)
+
+**6. Feature Importance — PredictionValuesChange (Top 20)**  
+Shows which variables impact churn most strongly.  
+![Feature Importance](charts/feature_importance_catboost.png)
+
+**7. KS Curve — CatBoost (KS = 0.525 @ 0.593)**  
+Indicates separation between churn and non-churn populations.  
+![KS Curve](charts/ks_curve_catboost.png)
+
+---
+
 
 🤖 **Trained Models**
 - [decision_tree.pkl](models/decision_tree.pkl)
