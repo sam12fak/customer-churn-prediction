@@ -1,0 +1,4 @@
+samples,churn_prob,rule
+1,0.5122,Contract = Month-to-month AND InternetService = DSL AND TenureBin ≠ 0
+1,0.0946,Contract = One year AND InternetService ≠ Fiber optic AND StreamingMovies ≠ Yes
+1,0.0293,Contract ≠ One year AND InternetService ≠ Fiber optic AND PaymentMethod ≠ Electronic check
